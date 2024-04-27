@@ -38,8 +38,7 @@ quiz_generation_prompt = PromptTemplate(
     )
 
 
-
-quiz_chain=LLMChain(llm=llm, prompt=quiz_generation_prompt, output_key="quiz", verbose=True)
+quiz_chain=LLMChain(llm=llm,prompts=quiz_generation_prompt,output_key="quiz",verbose=True)
 
 
 TEMPLATE2="""
